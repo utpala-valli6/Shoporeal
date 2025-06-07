@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kitchen Appliances</title>
+  <link rel="icon" type="image/x-icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRC2qHkDA10eJL0LUlf-0KYeokmRTW_qaQ9Q&s">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fef9f6;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+
+    .products {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .product-card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      width: 220px;
+      padding: 15px;
+      text-align: center;
+    }
+
+    .product-card img {
+      width: 100%;
+      height: 160px;
+      object-fit: contain;
+      border-bottom: 1px solid #eee;
+      margin-bottom: 10px;
+    }
+
+    .product-title {
+      font-size: 16px;
+      font-weight: bold;
+      margin: 10px 0 5px;
+      color: #444;
+    }
+
+    .price {
+      color: #e91e63;
+      font-weight: bold;
+      font-size: 15px;
+    }
+
+    .rating {
+      color: #ff9800;
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+    }
+
+    .buy-now,
+    .add-to-cart {
+      padding: 7px 14px;
+      font-size: 0.9em;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      color: white;
+      transition: background-color 0.3s ease;
+    }
+
+    .buy-now {
+      background-color: #ff5722;
+    }
+
+    .buy-now:hover {
+      background-color: #e64a19;
+    }
+
+    .add-to-cart {
+      background-color: #008cba;
+    }
+
+    .add-to-cart:hover {
+      background-color: #007bb5;
+    }
+
+    .back-link {
+      display: block;
+      text-align: center;
+      margin-top: 30px;
+      color: #333;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .back-link:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <h1>Kitchen Appliances</h1>
+
+ <div class="products">
+    <!-- Product 1 -->
+    <div class="product-card">
+<img src="https://indoappliances.com/cdn/shop/files/FrontImage_7c6a0a88-7b23-468d-b791-f6bc5201c612.png?v=1733122394" alt="Mixer">
+      <div class="product-title">Mixer Grinder</div>
+      <div class="price">₹2,499</div>
+       <div class="rating">★★★★☆ (4.2)</div>
+      <div class="buttons">
+        <button class="buy-now">Buy Now</button>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+
+
+    <!-- Product 2 -->
+    <div class="product-card">
+<img src="https://img.etimg.com/thumb/width-1200,height-900,imgsize-47640,resizemode-75,msid-92847221/top-trending-products/kitchen-dining/microwave/best-microwave-oven-under-30000.jpg" alt="Microwave">
+      <div class="product-title">Microwave Oven</div>
+      <div class="price">₹5,999</div> 
+     <div class="rating">★★★★☆ (4.3)</div>
+      <div class="buttons">
+        <button class="buy-now">Buy Now</button>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+
+   <div class="product-card">
+<img src="https://glenindia.com/cdn/shop/files/SA3014-GlenAutoPop-upToaster-min.jpg?v=1724750280" alt="Toaster">
+      <div class="product-title">Bread Toaster</div>
+      <div class="price">₹1,199</div>
+       <div class="rating">★★★★☆ (4.1)</div>
+      <div class="buttons">
+        <button class="buy-now">Buy Now</button>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+<img src="https://vestahomes.in/cdn/shop/files/122017.jpg?v=1712994276&width=1445" alt="Chopping Board">
+      <div class="product-title">Wooden Chopping Board</div>
+      <div class="price">₹399</div>
+      <div class="rating">★★★★★ (4.6)</div>
+      <div class="buttons">
+        <button class="buy-now">Buy Now</button>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+<img src="https://www.rasoishop.com/cdn/shop/files/8901365401803.png?v=1713936069" alt="Gas Stove">
+      <div class="product-title">2 Burner Gas Stove</div>
+      <div class="price">₹3,499</div>
+      <div class="rating">★★★★☆ (4.4)</div>
+      <div class="buttons">
+        <button class="buy-now">Buy Now</button>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+<img src="https://www.padminiappliances.com/cdn/shop/products/KT.jpg?v=1675323203&width=1946" alt="Electric Kettle">
+      <div class="product-title">Electric Kettle</div>
+      <div class="price">₹899</div>
+      <div class="rating">★★★☆☆ (3.9)</div>
+      <div class="buttons">
+        <button class="buy-now">Buy Now</button>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </div> 
+  </div>
+
+  </div>
+
+
+  <a class="back-link" href="style_page.html">Back to Home</a>
+  <a class="back-link" href="cart.html">Go to Cart</a>
+
+  <script>
+    function cleanPrice(priceString) {
+      return parseFloat(priceString.replace(/[₹,]/g, '').trim());
+    }
+
+    function addToCart(itemName, itemPrice, itemImage) {
+      const numericPrice = cleanPrice(itemPrice);
+      let cart = JSON.parse(localStorage.getItem('shoporealCart')) || [];
+      cart.push({ name: itemName, price: numericPrice, image: itemImage });
+      localStorage.setItem('shoporealCart', JSON.stringify(cart));
+      alert(`${itemName} added to cart at ₹${numericPrice}!`);
+    }
+
+    document.querySelectorAll('.product-card').forEach(card => {
+      const name = card.querySelector('.product-title').innerText;
+      const price = card.querySelector('.price').innerText;
+      const image = card.querySelector('img').src;
+
+      card.querySelector('.add-to-cart').addEventListener('click', () => {
+        addToCart(name, price, image);
+      });
+
+      card.querySelector('.buy-now').addEventListener('click', () => {
+        addToCart(name, price, image);
+        window.location.href = 'cart.html';
+      });
+    });
+  </script>
+</body>
+</html>
