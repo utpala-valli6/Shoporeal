@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Home Decor</title>
+  <link rel="icon" type="image/x-icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRC2qHkDA10eJL0LUlf-0KYeokmRTW_qaQ9Q&s">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fef9f6;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+
+    .products {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .product-card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      width: 220px;
+      padding: 15px;
+      text-align: center;
+    }
+
+    .product-card img {
+      width: 100%;
+      height: 160px;
+      object-fit: contain;
+      border-bottom: 1px solid #eee;
+      margin-bottom: 10px;
+    }
+
+    .product-title {
+      font-size: 16px;
+      font-weight: bold;
+      margin: 10px 0 5px;
+      color: #444;
+    }
+
+    .price {
+      color: #e91e63;
+      font-weight: bold;
+      font-size: 15px;
+    }
+
+    .rating {
+      color: #ff9800;
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+    }
+
+    .buy-now,
+    .add-to-cart {
+      padding: 7px 14px;
+      font-size: 0.9em;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      color: white;
+      transition: background-color 0.3s ease;
+    }
+
+    .buy-now {
+      background-color: #ff5722;
+    }
+
+    .buy-now:hover {
+      background-color: #e64a19;
+    }
+
+    .add-to-cart {
+      background-color: #008cba;
+    }
+
+    .add-to-cart:hover {
+      background-color: #007bb5;
+    }
+
+    .back-link {
+      display: block;
+      text-align: center;
+      margin-top: 30px;
+      color: #333;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .back-link:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <h1>Home Decor</h1>
+
+ <div class="products">
+    <!-- Product 1 -->
+    <div class="product-card">
+<img src="https://assets.ajio.com/medias/sys_master/root/20230523/znP0/646cee7042f9e729d7a7eff1/-288Wx360H-466187115-multi-MODEL.jpg" alt="Wall Clock" />
+      <div class="product-title">Vintage Wall Clock</div>
+      <div class="price">₹1,299</div>
+       <div class="rating">★★★★☆ (4.2)</div>
+      <div class="buttons">
+        <button class="buy-now">Buy Now</button>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+
+
+    <!-- Product 2 -->
+    <div class="product-card">
+<img src="https://easycraft.in/cdn/shop/files/Modern-Table-Lamp-1.jpg?v=1720080601&width=1445" alt="Table Lamp" />
+      <div class="product-title">Modern Table Lamp</div>
+      <div class="price">₹899</div>
+      <div class="rating">★★★★☆ (4.3)</div>
+      <div class="buttons">
+        <button class="buy-now">Buy Now</button>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+
+   <div class="product-card">
+  <img src="https://wallmantra.com/wp-content/uploads/wallmantra-big-painting-blue-eternity-abstract-framed-wall-art-32952548917414.jpg" alt="Wall Art" />
+      <div class="product-title">Abstract Wall Art</div>
+      <div class="price">₹1,499</div>
+       <div class="rating">★★★★☆ (4.1)</div>
+      <div class="buttons">
+        <button class="buy-now">Buy Now</button>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+<img src="https://nostalgiahomes.com/cdn/shop/products/IMG_2742.jpg?v=1671168233" alt="Flower Vase" />
+      <div class="product-title">Ceramic Flower Vase</div>
+      <div class="price">₹599</div>
+      <div class="rating">★★★★★ (4.6)</div>
+      <div class="buttons">
+        <button class="buy-now">Buy Now</button>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+<img src="https://2.wlimg.com/product_images/bc-full/2022/9/10838170/designer-cushion-covers-1663054416-6536220.jpeg" alt="Cushion Cover" />
+      <div class="product-title">Designer Cushion Covers (Set of 2)</div>
+      <div class="price">₹399</div>
+      <div class="rating">★★★★☆ (4.4)</div>
+      <div class="buttons">
+        <button class="buy-now">Buy Now</button>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+<img src="https://www.dekorcompany.com/cdn/shop/products/mirror-size_19f7d33c-2b9e-42ef-a93a-9425ae9f0d25.jpg?v=1677667103" alt="Decor Mirror" />
+      <div class="product-title">Decorative Wall Mirror</div>
+      <div class="price">₹1,999</div>
+      <div class="rating">★★★☆☆ (3.9)</div>
+      <div class="buttons">
+        <button class="buy-now">Buy Now</button>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </div> 
+  </div>
+  </div>
+
+  <a class="back-link" href="style_page.html">Back to Home</a>
+  <a class="back-link" href="cart.html">Go to Cart</a>
+
+  <script>
+    function cleanPrice(priceString) {
+      return parseFloat(priceString.replace(/[₹,]/g, '').trim());
+    }
+
+    function addToCart(itemName, itemPrice, itemImage) {
+      const numericPrice = cleanPrice(itemPrice);
+      let cart = JSON.parse(localStorage.getItem('shoporealCart')) || [];
+      cart.push({ name: itemName, price: numericPrice, image: itemImage });
+      localStorage.setItem('shoporealCart', JSON.stringify(cart));
+      alert(`${itemName} added to cart at ₹${numericPrice}!`);
+    }
+
+    document.querySelectorAll('.product-card').forEach(card => {
+      const name = card.querySelector('.product-title').innerText;
+      const price = card.querySelector('.price').innerText;
+      const image = card.querySelector('img').src;
+
+      card.querySelector('.add-to-cart').addEventListener('click', () => {
+        addToCart(name, price, image);
+      });
+
+      card.querySelector('.buy-now').addEventListener('click', () => {
+        addToCart(name, price, image);
+        window.location.href = 'cart.html';
+      });
+    });
+  </script>
+</body>
+</html>
