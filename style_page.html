@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Shoporeal Home</title>
+  <link rel="icon" type="image/x-icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRC2qHkDA10eJL0LUlf-0KYeokmRTW_qaQ9Q&s" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #e6f6fd;
+    }
+
+    .header {
+      background: #131921;
+      color: white;
+      padding: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .header input {
+      width: 400px;
+      padding: 5px;
+      margin: 0 20px;
+      border-radius: 4px;
+      border: none;
+    }
+
+    .nav {
+      background: #232f3e;
+      color: white;
+      display: flex;
+      padding: 10px;
+      font-size: 14px;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+      padding: 40px;
+      justify-items: center;
+    }
+
+    .card {
+      background: #a9a9a9;
+      width: 260px;
+      height: 280px;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.15);
+      text-align: center;
+      transition: transform 0.3s ease;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      margin-bottom: 15px;
+      border-radius: 8px;
+    }
+
+    .card p {
+      font-size: 20 px;
+      color: black;
+      margin: 0;
+      flex-grow: 1;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 480px) {
+      .container {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .cart-icon {
+      cursor: pointer;
+      font-size: 24px;
+      margin-right: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Header -->
+<div class="header">
+  <div>Shoporeal.in</div>
+  <input type="text" placeholder="Search Shoporeal.in" />
+  <div>
+    Account & Lists | Returns & Orders |
+    <span class="cart-icon" onclick="window.location.href='cart.html'">🛒</span>
+  </div>
+</div>
+
+<!-- Navigation -->
+<div class="nav">
+  <div>All</div>
+  <div>Fresh</div>
+  <div>MX Player</div>
+  <div>Sell</div>
+  <div>Bestsellers</div>
+  <div>Today's Deals</div>
+  <div>Mobiles</div>
+  <div>Customer Service</div>
+  <div>Prime</div>
+  <div>Fashion</div>
+</div>
+<div style="background-color: black ; color: white; padding: 15px; border-radius: 6px; max-width: 960px; margin: 20px auto; text-align: center; font-size: 18px;">
+  Welcome to Shoporeal! Explore our categories below 
+             🙂Happy Shopping🙂.
+</div>
+
+<!-- Category Cards Container -->
+<div class="container" id="categoryContainer">
+  <!-- JS will insert cards here -->
+</div>
+
+<script>
+  const categories = [
+    { id: 'kitchen', title: 'Kitchen Appliances', img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvRqFx8Xyiwdb371EoONyJHUBjuvGQi6C9wg&s', description: 'Mixers, ovens, grinders, and more for your kitchen needs\nClick here to explore.' },
+    { id: 'beddings', title: 'Beddings', img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHDiyB7hR0BtJGLNv9bh1yleXHSsLDtPi5ow&s', description: 'Comfortable and stylish bedding options\nClick here to explore.' },
+    { id: 'homedecor', title: 'Homedecor', img: 'https://i.pinimg.com/736x/a2/f2/a8/a2f2a83494776d23d242e1942c4f61ca.jpg', description: 'Beautify your home with decor\n Click here to explore.' },
+    { id: 'furniture', title: 'Furniture', img: 'https://m.media-amazon.com/images/I/71u3F2NZ9gL.jpg', description: 'Furniture that suits your style\nClick here to explore.' },
+    { id: 'groceries', title: 'Groceries', img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSNwzqNOSIzLdDSAWOI9CUzEyDeagMtZnvLw&s', description: 'Fresh groceries delivered to your door\n Click here to explore.' },
+    { id: 'home', title: 'Home Appliances', img: 'https://numalis.com/wp-content/uploads/2023/10/Maxx-Studio-Shutterstock.jpg', description: 'Latest home appliances for you\n Click here to explore.' },
+    { id: 'electronics', title: 'Electronics', img: 'https://www.eurokidsindia.com/blog/wp-content/uploads/2023/12/names-of-electronic-devices-in-english.jpg', description: 'Latest gadgets and electronics for you\n Click here to explore.' },
+    { id: 'skincare', title: 'Skincare', img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCYqKg_xui9h4gXGHcXB3KrKk2YGmKQPxCvRQ993VnQcgNImcQ4JCdlpDaR6KqyojRyeY&usqp=CAU', description: 'Premium skincare products for all skin types\n Click here to explore.' },
+    { id: 'clothing', title: 'Clothing', img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRywbHlSbxkCc-LCwkkVGIYwkPL7yvDf8qQHwcxrwdybNXV1y7rLe6mNpti_Jpx5NQhcVk&usqp=CAU', description: 'Trendy and comfortable clothing\n Click here to explore.' },
+    { id: 'accessories', title: 'Accessories', img: 'https://res.cloudinary.com/jerrick/image/upload/d_642250b563292b35f27461a7.png,f_jpg,fl_progressive,q_auto,w_1024/6034decdd53e35001ce48a5b.jpg', description: 'Complete your look with accessories\n Click here to explore.' },
+    { id: 'footwear', title: 'Footwear', img: 'https://images.hindustantimes.com/img/2022/12/22/550x309/istockphoto-1279108197-170667a_1671687926903_1671687937504_1671687937504.jpg', description: 'Comfortable and stylish footwear\n Click here to explore.' },
+    { id: 'haircare', title: 'Haircare', img: 'https://publish.purewow.net/wp-content/uploads/sites/2/2023/01/black-owned-haircare-brands-facebook.jpg', description: 'Haircare products for healthy hair\n Click here to explore.' },{ id: 'bags_trolleys', title: 'Bags and Trolleys', img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQh1tae22vZBVpdvT4kQTsEox4cwILU7bcWJQ&s', description: 'Durable bags and trolleys for every need\n Click here to explore.' },
+    { id: 'bookstore', title: 'Bookstore', img: 'https://content.jdmagicbox.com/comp/def_content/book_shops/default-book-shops-92-250.jpg', description: 'Books and stationery for all ages.\n Click here to explore' }, 
+    { id: 'bags', title: 'Bags and Trolleys', img: 'https://content.jdmagicbox.com/comp/vijayawada/x4/0866px866.x866.230429143355.n8x4/catalogue/w4rhht25bzoa7qp-ow20itbl2m.jpg', description: 'Stylish bags options\nClick here to explore.' },
+    { id: 'stationery', title: 'Stationery', img: 'https://5.imimg.com/data5/SELLER/Default/2023/12/366754990/GE/RI/AF/26935268/police-constable-competition-books-500x500.jpg', description: 'All your stationery needs\n Click here to explore.' },
+    { id: 'toys', title: 'Toys', img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiSaeOquqHz-tZXe51ZNWoMcvQ__FTRD-TBQ&s', description: 'Fun and educational toys\n Click here to explore.' }
+  ];
+
+  const container = document.getElementById('categoryContainer');
+
+  categories.forEach(cat => {
+    const card = document.createElement('div');
+    card.className = 'card';
+    card.setAttribute('role', 'button');
+    card.setAttribute('tabindex', '0');
+    card.innerHTML = `
+      <img src="${cat.img}" alt="${cat.title}">
+      <h3>${cat.title}</h3>
+      <p>${cat.description || 'Description coming soon...'}</p>
+    `;
+    card.onclick = () => goToCategory(cat.id);
+    card.onkeypress = (e) => { if (e.key === 'Enter') goToCategory(cat.id); };
+    container.appendChild(card);
+  });
+
+  function goToCategory(category) {
+    window.location.href = category + '.html';
+  }
+</script>
+
+</body>
+</html>
