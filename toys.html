@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Toys</title>
+  <link rel="icon" type="image/x-icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRC2qHkDA10eJL0LUlf-0KYeokmRTW_qaQ9Q&s">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fef9f6;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+
+    .products {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .product-card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      width: 220px;
+      padding: 15px;
+      text-align: center;
+    }
+
+    .product-card img {
+      width: 100%;
+      height: 160px;
+      object-fit: contain;
+      border-bottom: 1px solid #eee;
+      margin-bottom: 10px;
+    }
+
+    .product-title {
+      font-size: 16px;
+      font-weight: bold;
+      margin: 10px 0 5px;
+      color: #444;
+    }
+
+    .price {
+      color: #e91e63;
+      font-weight: bold;
+      font-size: 15px;
+    }
+
+    .rating {
+      color: #ff9800;
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+    }
+
+    .buy-now,
+    .add-to-cart {
+      padding: 7px 14px;
+      font-size: 0.9em;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      color: white;
+      transition: background-color 0.3s ease;
+    }
+
+    .buy-now {
+      background-color: #ff5722;
+    }
+
+    .buy-now:hover {
+      background-color: #e64a19;
+    }
+
+    .add-to-cart {
+      background-color: #008cba;
+    }
+
+    .add-to-cart:hover {
+      background-color: #007bb5;
+    }
+
+    .back-link {
+      display: block;
+      text-align: center;
+      margin-top: 30px;
+      color: #333;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .back-link:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <h1>Toys</h1>
+
+  <div class="products">
+    <!-- Product 1 -->
+    <div class="product-card">
+<img src="https://www.giftacrossindia.com/media/catalog/product/new/GAICOM0725.jpg" alt="Teddy Bear" />
+      <div class="product-title">Soft Teddy Bear</div>
+      <div class="price">₹599</div>
+       <div class="rating">★★★★☆ (4.2)</div>
+      <div class="buttons">
+        <button class="buy-now">Buy Now</button>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+
+
+    <!-- Product 2 -->
+    <div class="product-card">
+<img src="https://toycra.com/cdn/shop/files/Sirius-Toys-Dune-Drifter-High-Speed-Off-Road-Rechargeable-Remote-Control-Car-RC-Toys-Sirius-Toys-Toycra_700x700.jpg?v=1721923505" alt="Toy Car" />
+      <div class="product-title">Remote Control Car</div>
+      <div class="price">₹1,199</div>
+     <div class="rating">★★★★☆ (4.3)</div>
+      <div class="buttons">
+        <button class="buy-now">Buy Now</button>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+
+   <div class="product-card">
+<img src="https://www.mudpuppy.com/cdn/shop/products/space-mission-100-piece-wood-puzzle-display-9780735376342-733314.jpg?v=1674091134" alt="Puzzle" />
+      <div class="product-title">100-Piece Puzzle</div>
+      <div class="price">₹299</div>
+       <div class="rating">★★★★☆ (4.1)</div>
+      <div class="buttons">
+        <button class="buy-now">Buy Now</button>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+<img src="https://www.melissaanddoug.com/cdn/shop/files/2024-07-24_6e49ac98-ca85-439f-9db2-39fc92eaef69.jpg?v=1721850265&width=750" alt="Blocks" />
+      <div class="product-title">Building Blocks Set</div>
+      <div class="price">₹749</div>
+      <div class="rating">★★★★★ (4.6)</div>
+      <div class="buttons">
+        <button class="buy-now">Buy Now</button>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+<img src="https://toycra.com/cdn/shop/files/Barbie-Fashion-Doll-Accessories-Dolls-Barbie-Toycra-2_700x700.jpg?v=1686931396" alt="Doll" />
+      <div class="product-title">Fashion Doll</div>
+      <div class="price">₹499</div>
+      <div class="rating">★★★★☆ (4.4)</div>
+      <div class="buttons">
+        <button class="buy-now">Buy Now</button>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+<img src="https://img.tatacliq.com/images/i19//658Wx734H/MP000000023336172_658Wx734H_202408171834541.jpeg" alt="Action Figure" />
+      <div class="product-title">Superhero Action Figure</div>
+      <div class="price">₹899</div>
+      <div class="rating">★★★☆☆ (3.9)</div>
+      <div class="buttons">
+        <button class="buy-now">Buy Now</button>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </div> 
+  </div>
+  </div>
+
+  <a class="back-link" href="style_page.html">Back to Home</a>
+  <a class="back-link" href="cart.html">Go to Cart</a>
+
+  <script>
+    function cleanPrice(priceString) {
+      return parseFloat(priceString.replace(/[₹,]/g, '').trim());
+    }
+
+    function addToCart(itemName, itemPrice, itemImage) {
+      const numericPrice = cleanPrice(itemPrice);
+      let cart = JSON.parse(localStorage.getItem('shoporealCart')) || [];
+      cart.push({ name: itemName, price: numericPrice, image: itemImage });
+      localStorage.setItem('shoporealCart', JSON.stringify(cart));
+      alert(`${itemName} added to cart at ₹${numericPrice}!`);
+    }
+
+    document.querySelectorAll('.product-card').forEach(card => {
+      const name = card.querySelector('.product-title').innerText;
+      const price = card.querySelector('.price').innerText;
+      const image = card.querySelector('img').src;
+
+      card.querySelector('.add-to-cart').addEventListener('click', () => {
+        addToCart(name, price, image);
+      });
+
+      card.querySelector('.buy-now').addEventListener('click', () => {
+        addToCart(name, price, image);
+        window.location.href = 'cart.html';
+      });
+    });
+  </script>
+</body>
+</html>
