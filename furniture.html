@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Furniture</title>
+  <link rel="icon" type="image/x-icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRC2qHkDA10eJL0LUlf-0KYeokmRTW_qaQ9Q&s">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fef9f6;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+
+    .products {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .product-card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      width: 220px;
+      padding: 15px;
+      text-align: center;
+    }
+
+    .product-card img {
+      width: 100%;
+      height: 160px;
+      object-fit: contain;
+      border-bottom: 1px solid #eee;
+      margin-bottom: 10px;
+    }
+
+    .product-title {
+      font-size: 16px;
+      font-weight: bold;
+      margin: 10px 0 5px;
+      color: #444;
+    }
+
+    .price {
+      color: #e91e63;
+      font-weight: bold;
+      font-size: 15px;
+    }
+
+    .rating {
+      color: #ff9800;
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+    }
+
+    .buy-now,
+    .add-to-cart {
+      padding: 7px 14px;
+      font-size: 0.9em;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      color: white;
+      transition: background-color 0.3s ease;
+    }
+
+    .buy-now {
+      background-color: #ff5722;
+    }
+
+    .buy-now:hover {
+      background-color: #e64a19;
+    }
+
+    .add-to-cart {
+      background-color: #008cba;
+    }
+
+    .add-to-cart:hover {
+      background-color: #007bb5;
+    }
+
+    .back-link {
+      display: block;
+      text-align: center;
+      margin-top: 30px;
+      color: #333;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .back-link:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <h1>Furniture</h1>
+
+<div class="products">
+    <!-- Product 1 -->
+    <div class="product-card">
+<img src="https://mysleepyhead.com/media/catalog/product/a/f/affordable_sofa_8.jpg" alt="Sofa" />
+      <div class="product-title">3-Seater Sofa</div>
+      <div class="price">₹14,999</div>
+      <div class="rating">★★★★☆ (4.2)</div>
+      <div class="buttons">
+        <button class="buy-now">Buy Now</button>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+
+    <!-- Product 2 -->
+    <div class="product-card">
+<img src="https://ikiru.in/cdn/shop/files/buy-dining-furniture-set-modern-designed-marble-top-dining-table-with-6-wooden-chairs-for-dining-room-by-orange-tree-on-ikiru-online-store-1_1200x1200.jpg?v=1739205894" alt="Dining Table" />
+      <div class="product-title">Dining Table Set</div>
+      <div class="price">₹11,499</div>
+      <div class="rating">★★★★☆ (4.3)</div>
+      <div class="buttons">
+        <button class="buy-now">Buy Now</button>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+
+   <div class="product-card">
+<img src="https://woodentwist.com/cdn/shop/products/untitled.1274.jpg?v=1743288748" alt="Bed" />
+      <div class="product-title">Queen Size Bed</div>
+      <div class="price">₹18,999</div>
+       <div class="rating">★★★★☆ (4.1)</div>
+      <div class="buttons">
+        <button class="buy-now">Buy Now</button>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+<img src="https://thetimberguy.com/cdn/shop/products/Buy-Wooden-Study-table-Writing-table-Desk-for-Modern-Home_600x.jpg?v=1739470075" alt="Study Table" />
+      <div class="product-title">Study Table</div>
+      <div class="price">₹3,499</div>
+      <div class="rating">★★★★★ (4.6)</div>
+      <div class="buttons">
+        <button class="buy-now">Buy Now</button>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+<img src="https://www.nilkamalfurniture.com/cdn/shop/products/MRIVA2DRWRBWMNWG_06.jpg?v=1635241830" alt="Wardrobe" />
+      <div class="product-title">2-Door Wardrobe</div>
+      <div class="price">₹9,999</div>
+      <div class="rating">★★★★☆ (4.4)</div>
+      <div class="buttons">
+        <button class="buy-now">Buy Now</button>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+<img src="https://thesleepcompany.in/cdn/shop/files/1_e53d1840-e4ea-4461-a3ce-6966f1bcf3c9.webp?v=1748543277" alt="Recliner Chair" />
+      <div class="product-title">Recliner Chair</div>
+      <div class="price">₹7,999</div>
+      <div class="rating">★★★☆☆ (3.9)</div>
+      <div class="buttons">
+        <button class="buy-now">Buy Now</button>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </div> 
+  </div>
+
+  </div>
+
+
+  <a class="back-link" href="style_page.html">Back to Home</a>
+  <a class="back-link" href="cart.html">Go to Cart</a>
+
+  <script>
+    function cleanPrice(priceString) {
+      return parseFloat(priceString.replace(/[₹,]/g, '').trim());
+    }
+
+    function addToCart(itemName, itemPrice, itemImage) {
+      const numericPrice = cleanPrice(itemPrice);
+      let cart = JSON.parse(localStorage.getItem('shoporealCart')) || [];
+      cart.push({ name: itemName, price: numericPrice, image: itemImage });
+      localStorage.setItem('shoporealCart', JSON.stringify(cart));
+      alert(`${itemName} added to cart at ₹${numericPrice}!`);
+    }
+
+    document.querySelectorAll('.product-card').forEach(card => {
+      const name = card.querySelector('.product-title').innerText;
+      const price = card.querySelector('.price').innerText;
+      const image = card.querySelector('img').src;
+
+      card.querySelector('.add-to-cart').addEventListener('click', () => {
+        addToCart(name, price, image);
+      });
+
+      card.querySelector('.buy-now').addEventListener('click', () => {
+        addToCart(name, price, image);
+        window.location.href = 'cart.html';
+      });
+    });
+  </script>
+</body>
+</html>
