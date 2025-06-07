@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Your Cart</title>
+  <link rel="icon" type="image/x-icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRC2qHkDA10eJL0LUlf-0KYeokmRTW_qaQ9Q&s">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f7f7f7;
+      padding: 20px;
+    }
+
+    h2 {
+      text-align: center;
+    }
+
+    .cart-container {
+      max-width: 500px;
+      margin: 0 auto;
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .cart-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 0;
+      border-bottom: 1px solid #ccc;
+    }
+
+    .cart-item img {
+      width: 50px;
+      height: 50px;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+
+    .item-details {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex: 1;
+    }
+
+    .remove-btn {
+      background: red;
+      color: white;
+      border: none;
+      border-radius: 50%;
+      width: 20px;
+      height: 20px;
+      font-size: 12px;
+      line-height: 18px;
+      cursor: pointer;
+    }
+
+    .total {
+      font-weight: bold;
+      text-align: right;
+      margin-top: 15px;
+    }
+
+    .checkout-btn {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      background-color: #28a745;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      font-size: 16px;
+      cursor: pointer;
+      margin-top: 15px;
+    }
+
+    .checkout-btn:hover {
+      background-color: #218838;
+    }
+
+    .back-link {
+      display: block;
+      text-align: center;
+      margin-top: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      color: #333;
+    }
+
+    .back-link:hover {
+      text-decoration: underline;
+    }
+
+    .empty {
+      text-align: center;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>🛒 Your Shopping Cart</h2>
+  <div class="cart-container" id="cartContainer"></div>
+
+  <a href="style_page.html" class="back-link">Continue Shopping</a>
+
+  <script>
+    const cartContainer = document.getElementById('cartContainer');
+    let cart = JSON.parse(localStorage.getItem('shoporealCart')) || [];
+
+    function renderCart() {
+      cartContainer.innerHTML = '';
+
+      if (cart.length === 0) {
+        cartContainer.innerHTML = '<p class="empty">Your cart is empty.</p>';
+        return;
+      }
+
+      let total = 0;
+
+      cart.forEach((item, index) => {
+        const price = parseFloat(item.price) || 0;
+        total += price;
+
+        const div = document.createElement('div');
+        div.className = 'cart-item';
+        div.innerHTML = `
+          <div class="item-details">
+            <img src="${item.image}" alt="${item.name}">
+            <span>${item.name}<br><small>₹${price.toFixed(2)}</small></span>
+          </div>
+          <button class="remove-btn" onclick="removeFromCart(${index})">&times;</button>
+        `;
+        cartContainer.appendChild(div);
+      });
+
+      const totalDiv = document.createElement('div');
+      totalDiv.className = 'total';
+      totalDiv.innerText = `Total: ₹${total.toFixed(2)}`;
+      cartContainer.appendChild(totalDiv);
+
+      const checkoutBtn = document.createElement('button');
+      checkoutBtn.className = 'checkout-btn';
+      checkoutBtn.innerText = 'Checkout';
+      checkoutBtn.onclick = () => {
+        alert('✅ Checkout complete!\nThanks for shopping 🛍️');
+        cart = [];
+        localStorage.setItem('shoporealCart', JSON.stringify(cart));
+        renderCart();
+      };
+      cartContainer.appendChild(checkoutBtn);
+    }
+
+    function removeFromCart(index) {
+      cart.splice(index, 1);
+      localStorage.setItem('shoporealCart', JSON.stringify(cart));
+      renderCart();
+    }
+
+    renderCart();
+  </script>
+</body>
+</html>
