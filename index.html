@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Register</title>
+  <link rel="icon" type="image/x-icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRC2qHkDA10eJL0LUlf-0KYeokmRTW_qaQ9Q&s">
+  <style>
+    body {
+      
+      margin: 0;
+      padding: 0;
+      background-image: url("https://w0.peakpx.com/wallpaper/733/120/HD-wallpaper-s-name-wala-black-background-alphabet.jpg");
+      background-size: cover;
+      font-family: Arial, sans-serif;
+    }
+
+    .form-container {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(4px);
+      padding: 40px;
+      width: 400px;
+      margin: 50px auto;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+      color: rgb(255, 255, 255);
+      margin-top: -1px;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 25px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: none;
+      border-radius: 5px;
+    }
+
+    input[type="radio"] {
+      width: auto;
+      margin-right: 10px;
+    }
+
+    button {
+      width: 100%;
+      padding: 10px;
+      background-color: rgb(75, 63, 63);
+      color: rgb(255, 255, 255);
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #ccc;
+    }
+
+    .login-link {
+      text-align: center;
+      margin-top: 15px;
+    }
+
+    .login-link a {
+      color: rgb(59, 30, 201);
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <h2>Register</h2>
+    <form action="login.html" method="get">
+      <label>Name:</label>
+      <input type="text" required />
+
+      <label>Email:</label>
+      <input type="email" required />
+
+      <label>Password:</label>
+      <input type="password" required />
+
+      <label>Confirm Password:</label>
+      <input type="password" required />
+
+      <label>Mobile No:</label>
+      <input type="number" required />
+
+      <label>Date of Birth:</label>
+      <input type="date" required />
+
+      <label>Gender:</label>
+      <input type="radio" name="gender" /> Male
+      <input type="radio" name="gender" /> Female
+
+      <label>Address:</label>
+      <textarea required></textarea>
+
+      <button type="submit">Submit</button>
+
+      <div class="login-link">
+        Already have an account? <a href="login.html">Login here</a>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
