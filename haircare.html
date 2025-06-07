@@ -1,0 +1,218 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Haircare</title>
+  <link rel="icon" type="image/x-icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRC2qHkDA10eJL0LUlf-0KYeokmRTW_qaQ9Q&s">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fef9f6;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+
+    .products {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .product-card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      width: 220px;
+      padding: 15px;
+      text-align: center;
+    }
+
+    .product-card img {
+      width: 100%;
+      height: 160px;
+      object-fit: contain;
+      border-bottom: 1px solid #eee;
+      margin-bottom: 10px;
+    }
+
+    .product-title {
+      font-size: 16px;
+      font-weight: bold;
+      margin: 10px 0 5px;
+      color: #444;
+    }
+
+    .price {
+      color: #e91e63;
+      font-weight: bold;
+      font-size: 15px;
+    }
+
+    .rating {
+      color: #ff9800;
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+    }
+
+    .buy-now,
+    .add-to-cart {
+      padding: 7px 14px;
+      font-size: 0.9em;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      color: white;
+      transition: background-color 0.3s ease;
+    }
+
+    .buy-now {
+      background-color: #ff5722;
+    }
+
+    .buy-now:hover {
+      background-color: #e64a19;
+    }
+
+    .add-to-cart {
+      background-color: #008cba;
+    }
+
+    .add-to-cart:hover {
+      background-color: #007bb5;
+    }
+
+    .back-link {
+      display: block;
+      text-align: center;
+      margin-top: 30px;
+      color: #333;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .back-link:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <h1>Haircare</h1>
+
+<div class="products">
+    <!-- Product 1 -->
+    <div class="product-card">
+<img src="https://www.kerastase.in/dw/image/v2/BJSQ_PRD/on/demandware.static/-/Sites-kerastase-master-catalog/default/dw1ec7bb80/2022/specifique/Bain%20Divalent%20Shampoo.jpg" alt="Shampoo" />
+      <div class="product-title">Shampoo</div>
+      <div class="price">₹149</div>
+       <div class="rating">★★★★☆ (4.2)</div>
+      <div class="buttons">
+        <button class="buy-now">Buy Now</button>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+
+
+    <!-- Product 2 -->
+    <div class="product-card">
+<img src="https://rukminim3.flixcart.com/image/850/1000/xif0q/hair-oil/8/x/h/200-100-pure-coconut-oil-for-all-hair-skin-types-skin-healthy-original-imaghkrgcr5rhg2b.jpeg?q=20&crop=false" alt="Conditioner" />
+      <div class="product-title">Silky Conditioner 180ml</div>
+      <div class="price">₹129</div>
+      <div class="rating">★★★★☆ (4.3)</div>
+      <div class="buttons">
+        <button class="buy-now">Buy Now</button>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+
+   <div class="product-card">
+  <img src="https://rukminim3.flixcart.com/image/850/1000/xif0q/hair-oil/8/x/h/200-100-pure-coconut-oil-for-all-hair-skin-types-skin-healthy-original-imaghkrgcr5rhg2b.jpeg?q=20&crop=false" alt="Hair Oil" />
+      <div class="product-title">Coconut Hair Oil 300ml</div>
+      <div class="price">₹99</div>
+       <div class="rating">★★★★☆ (4.1)</div>
+      <div class="buttons">
+        <button class="buy-now">Buy Now</button>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+<img src="https://discoverpilgrim.com/cdn/shop/files/1_1.jpg?v=1747214400" alt="Hair Serum" />
+      <div class="product-title">Anti-Frizz Hair Serum</div>
+      <div class="price">₹199</div>
+      <div class="rating">★★★★★ (4.6)</div>
+      <div class="buttons">
+        <button class="buy-now">Buy Now</button>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+<img src="https://bhramarah.in/cdn/shop/files/natural_keratin_hair_mask_5780a302-6915-4be2-bb18-470641561843.jpg?v=1744775519&width=480" alt="Hair Mask" />
+      <div class="product-title">Deep Nourishing Hair Mask</div>
+      <div class="price">₹249</div>
+      <div class="rating">★★★★☆ (4.4)</div>
+      <div class="buttons">
+        <button class="buy-now">Buy Now</button>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+<img src="https://htcstore.in/wp-content/uploads/2024/02/Untitled-design-83.png" alt="Hair Color" />
+      <div class="product-title">Hair Color – Natural Black</div>
+      <div class="price">₹89</div>
+      <div class="rating">★★★☆☆ (3.9)</div>
+      <div class="buttons">
+        <button class="buy-now">Buy Now</button>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </div> 
+  </div>
+
+  </div>
+  <a class="back-link" href="style_page.html">Back to Home</a>
+  <a class="back-link" href="cart.html">Go to Cart</a>
+
+  <script>
+    function cleanPrice(priceString) {
+      return parseFloat(priceString.replace(/[₹,]/g, '').trim());
+    }
+
+    function addToCart(itemName, itemPrice, itemImage) {
+      const numericPrice = cleanPrice(itemPrice);
+      let cart = JSON.parse(localStorage.getItem('shoporealCart')) || [];
+      cart.push({ name: itemName, price: numericPrice, image: itemImage });
+      localStorage.setItem('shoporealCart', JSON.stringify(cart));
+      alert(`${itemName} added to cart at ₹${numericPrice}!`);
+    }
+
+    document.querySelectorAll('.product-card').forEach(card => {
+      const name = card.querySelector('.product-title').innerText;
+      const price = card.querySelector('.price').innerText;
+      const image = card.querySelector('img').src;
+
+      card.querySelector('.add-to-cart').addEventListener('click', () => {
+        addToCart(name, price, image);
+      });
+
+      card.querySelector('.buy-now').addEventListener('click', () => {
+        addToCart(name, price, image);
+        window.location.href = 'cart.html';
+      });
+    });
+  </script>
+</body>
+</html>
